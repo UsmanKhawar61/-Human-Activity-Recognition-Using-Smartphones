@@ -4,7 +4,6 @@
 
 library(dplyr)
 library(data.table)
-library(plyr)
 setwd("C:\\Users\\usman\\Desktop\\Data Science\\Projects\\Human-Activity-Recognition-Using-Smartphones\\UCI HAR Dataset")
 cd<- getwd()
 #Loading the test individual datasets
@@ -58,5 +57,11 @@ rm(names_data, names_mean, names_std, relevant_indices)
 
 ###Creating a tidy dataset with mean for each activity and subject
 data_tidy<- data_mstd%>%
-    group_by(`Subject ID`)%>%
-    summarise(Average= mean(tBodyAcc_mX))
+    group_by(`Subject ID`, `Activity ID`)%>%
+    summarise(mean(tBodyAcc_mX), mean(tBodyAcc_mY), mean(tBodyAcc_mZ),  mean(tGravityAcc_mX), mean(tGravityAcc_mY), mean(tGravityAcc_mZ), mean(tBodyAccJerk_mX), mean(tBodyAccJerk_mY), mean(tBodyAccJerk_mZ), mean(tBodyGyro_mX), mean(tBodyGyro_mY), mean(tBodyGyro_mZ), mean(tBodyGyroJerk_mX), mean(tBodyGyroJerk_mY), mean(tBodyGyroJerk_mZ), mean(tBodyAccMag_m), mean(tGravityAccMag_m), mean(tBodyAccJerkMag_m), mean(tBodyGyroMag_m), mean(tBodyGyroJerkMag_m), mean(fBodyAcc_mX), mean(fBodyAcc_mY), mean(fBodyAcc_mZ),  mean(fBodyAccJerk_mX), mean(fBodyAccJerk_mY), mean(fBodyAccJerk_mZ), mean(fBodyGyro_mX), mean(fBodyGyro_mY), mean(fBodyGyro_mZ), mean(fBodyAccMag_m), mean(fBodyBodyAccJerkMag_m), mean(fBodyBodyGyroMag_m), mean(fBodyBodyGyroJerkMag_m),mean(tBodyAcc_stdX), mean(tBodyAcc_stdY), mean(tBodyAcc_stdZ),  mean(tGravityAcc_stdX), mean(tGravityAcc_stdY), mean(tGravityAcc_stdZ), mean(tBodyAccJerk_stdX), mean(tBodyAccJerk_stdY), mean(tBodyAccJerk_stdZ), mean(tBodyGyro_stdX), mean(tBodyGyro_stdY), mean(tBodyGyro_stdZ), mean(tBodyGyroJerk_stdX), mean(tBodyGyroJerk_stdY), mean(tBodyGyroJerk_stdZ), mean(tBodyAccMag_std), mean(tGravityAccMag_std), mean(tBodyAccJerkMag_std), mean(tBodyGyroMag_std), mean(tBodyGyroJerkMag_std), mean(fBodyAcc_stdX), mean(fBodyAcc_stdY), mean(fBodyAcc_stdZ),  mean(fBodyAccJerk_stdX), mean(fBodyAccJerk_stdY), mean(fBodyAccJerk_stdZ), mean(fBodyGyro_stdX), mean(fBodyGyro_stdY), mean(fBodyGyro_stdZ), mean(fBodyAccMag_std), mean(fBodyBodyAccJerkMag_std), mean(fBodyBodyGyroMag_std), mean(fBodyBodyGyroJerkMag_std))%>%
+    print()
+
+###Creating a new file from the tidy dataset
+setwd(cd)
+write.table(data_tidy, "Tidy Dataset.txt", row.names = FALSE)
+
