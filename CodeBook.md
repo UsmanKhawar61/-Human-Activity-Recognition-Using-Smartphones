@@ -1,3 +1,4 @@
+
 #Code Book for the HARUS (Human Activity Recognition Using Smartphones) Project  
 ##Step1:  
 Importing the raw data and merging data into one large dataset.  
