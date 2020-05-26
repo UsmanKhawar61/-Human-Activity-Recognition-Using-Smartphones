@@ -1,4 +1,4 @@
-#Human-Activity-Recognition-Using-Smartphones
+# Human-Activity-Recognition-Using-Smartphones
 This project is done as the course end mandatory assignment of Getting and Cleaning Data taught by on Coursera.
 *********************************************************************************************
 Solution By: Usman Khawar  
@@ -12,7 +12,7 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 For more information about the data, visit: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 *********************************************************************************************
-run_analysis.R:
+# run_analysis.R:
 This is a script written in R that performs the following tasks sequentially:
 1) Importing various relevant datasets from the project directory.
 2) Pefrom necessary cleaning individually to those datasets and merge training and test sets.
@@ -23,6 +23,6 @@ This is a script written in R that performs the following tasks sequentially:
 7) Takes a mean of all features for the grouped variables.
 8) Writes the extracted data to a new file labeled "Tidy Dataset.txt"
 *********************************************************************************************
-CodeBook.md:
+# CodeBook.md:
 This markdown file lists all variables and all the work done to transform the data. Refer to this file for information about the dataset variables.
 *********************************************************************************************
