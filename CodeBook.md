@@ -177,3 +177,27 @@ Now we grouped the data by variables Activity ID and Subject ID, after that, sum
 [65] "mean(fBodyAccMag_std)"          "mean(fBodyBodyAccJerkMag_std)" 
 [67] "mean(fBodyBodyGyroMag_std)"     "mean(fBodyBodyGyroJerkMag_std)"
 
+##Variables of the TIDY DATASET:
+
+1. Subject ID
+Integer variable ranging from 1 to 30. Each number represents an individual partaking in the experiment. 
+
+2. Activity ID:
+A factor variable with 6 levels.
+LAYING-->1, SITTING --> 2, STANDING--> 3, WALKING--> 4, WALKING_DOWNSTAIRS--> 5, WALKING_UPSTAIRS -->6
+
+For all variables 3:68:
+mean("name")--> Reperesents average of the feature "name"
+All variables are numeric and normalized on as scale -1 to 1.
+The "names" represent features of wide variety that are calculated of either mean or standard deviation.
+_m --> Mean of the feature
+_std --> Standard Deviation of the feature
+_m without either X,Y or Z means it's a standalone measurement.
+_mX --> X-axis
+_mY --> Y-axis
+_mZ --> Z-axis
+
+Feature names starting with "t" means they are measured in the time domain.
+Feature names starting with "f" means they are measured in the frequency domain.
+
+All above rules also apply to the "_std" similarly.
