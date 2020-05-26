@@ -1,6 +1,6 @@
-#Code Book
+# Code Book for HARUS Project
 
-##Step1:  
+## Step1:  
 Importing the raw data and merging data into one large dataset.  
 It contained the folowing variables:  
 
@@ -99,7 +99,7 @@ It contained the folowing variables:
 [553] "V553"        "V554"        "V555"        "V556"        "V557"        "V558"       
 [559] "V559"        "V560"        "V561"        "Activity ID" "Subject ID" 
 
-##Step 2:  
+## Step 2:  
 After cleaning and extracting only the mean and standard deviation measures, we got a relatively smaller dataset with the following variables:  
  [1] "Activity ID" "Subject ID"  "V1"          "V2"          "V3"          "V4"         
  [7] "V5"          "V6"          "V41"         "V42"         "V43"         "V44"        
@@ -114,7 +114,7 @@ After cleaning and extracting only the mean and standard deviation measures, we 
 [61] "V503"        "V504"        "V516"        "V517"        "V529"        "V530"       
 [67] "V542"        "V543"       
 
-##Step3:  
+## Step3:  
 After renaming the data variables, we got the following:  
  [1] "Activity ID"              "Subject ID"               "tBodyAcc_mX"             
  [4] "tBodyAcc_mY"              "tBodyAcc_mZ"              "tBodyAcc_stdX"           
@@ -141,7 +141,7 @@ After renaming the data variables, we got the following:
 [67] "fBodyBodyGyroJerkMag_m"   "fBodyBodyGyroJerkMag_std"
 
 
-##Step 4:
+## Step 4:
 Now we grouped the data by variables Activity ID and Subject ID, after that, summarise() function was used to determine average of each variable. The new tidy dataset had the following variables:  
  [1] "Subject ID"                     "Activity ID"                   
  [3] "mean(tBodyAcc_mX)"              "mean(tBodyAcc_mY)"             
@@ -178,12 +178,12 @@ Now we grouped the data by variables Activity ID and Subject ID, after that, sum
 [65] "mean(fBodyAccMag_std)"          "mean(fBodyBodyAccJerkMag_std)" 
 [67] "mean(fBodyBodyGyroMag_std)"     "mean(fBodyBodyGyroJerkMag_std)"
 
-##Variables of the TIDY DATASET:  
+## Variables of the TIDY DATASET:  
 
-1. Subject ID  
+*1. Subject ID*  
 Integer variable ranging from 1 to 30. Each number represents an individual partaking in the experiment.   
 
-2. Activity ID:  
+*2. Activity ID:*  
 A factor variable with 6 levels.  
 LAYING-->1, SITTING --> 2, STANDING--> 3, WALKING--> 4, WALKING_DOWNSTAIRS--> 5, WALKING_UPSTAIRS -->6  
 
