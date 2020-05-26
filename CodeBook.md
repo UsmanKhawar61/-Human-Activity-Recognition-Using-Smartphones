@@ -187,7 +187,7 @@ Integer variable ranging from 1 to 30. Each number represents an individual part
 A factor variable with 6 levels.  
 LAYING-->1, SITTING --> 2, STANDING--> 3, WALKING--> 4, WALKING_DOWNSTAIRS--> 5, WALKING_UPSTAIRS -->6  
 
-For all variables 3:68:  
+*For all variables 3:68:*  
 mean("name")--> Reperesents average of the feature "name"  
 All variables are numeric and normalized on as scale -1 to 1.  
 The "names" represent features of wide variety that are calculated of either mean or standard deviation.  
