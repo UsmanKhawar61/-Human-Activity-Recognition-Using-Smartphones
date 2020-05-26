@@ -1,7 +1,7 @@
-#Code Book for the HARUS (Human Activity Recognition Using Smartphones) Project
-##Step1:
-Importing the raw data and merging data into one large dataset.
-It contained the folowing variables:
+#Code Book for the HARUS (Human Activity Recognition Using Smartphones) Project  
+##Step1:  
+Importing the raw data and merging data into one large dataset.  
+It contained the folowing variables:  
 
   [1] "V1"          "V2"          "V3"          "V4"          "V5"          "V6"         
   [7] "V7"          "V8"          "V9"          "V10"         "V11"         "V12"        
@@ -98,8 +98,8 @@ It contained the folowing variables:
 [553] "V553"        "V554"        "V555"        "V556"        "V557"        "V558"       
 [559] "V559"        "V560"        "V561"        "Activity ID" "Subject ID" 
 
-##Step 2:
-After cleaning and extracting only the mean and standard deviation measures, we got a relatively smaller dataset with the following variables:
+##Step 2:  
+After cleaning and extracting only the mean and standard deviation measures, we got a relatively smaller dataset with the following variables:  
  [1] "Activity ID" "Subject ID"  "V1"          "V2"          "V3"          "V4"         
  [7] "V5"          "V6"          "V41"         "V42"         "V43"         "V44"        
 [13] "V45"         "V46"         "V81"         "V82"         "V83"         "V84"        
@@ -113,8 +113,8 @@ After cleaning and extracting only the mean and standard deviation measures, we 
 [61] "V503"        "V504"        "V516"        "V517"        "V529"        "V530"       
 [67] "V542"        "V543"       
 
-##Step3:
-After renaming the data variables, we got the following:
+##Step3:  
+After renaming the data variables, we got the following:  
  [1] "Activity ID"              "Subject ID"               "tBodyAcc_mX"             
  [4] "tBodyAcc_mY"              "tBodyAcc_mZ"              "tBodyAcc_stdX"           
  [7] "tBodyAcc_stdY"            "tBodyAcc_stdZ"            "tGravityAcc_mX"          
@@ -141,7 +141,7 @@ After renaming the data variables, we got the following:
 
 
 ##Step 4:
-Now we grouped the data by variables Activity ID and Subject ID, after that, summarise() function was used to determine average of each variable. The new tidy dataset had the following variables:
+Now we grouped the data by variables Activity ID and Subject ID, after that, summarise() function was used to determine average of each variable. The new tidy dataset had the following variables:  
  [1] "Subject ID"                     "Activity ID"                   
  [3] "mean(tBodyAcc_mX)"              "mean(tBodyAcc_mY)"             
  [5] "mean(tBodyAcc_mZ)"              "mean(tGravityAcc_mX)"          
@@ -177,27 +177,27 @@ Now we grouped the data by variables Activity ID and Subject ID, after that, sum
 [65] "mean(fBodyAccMag_std)"          "mean(fBodyBodyAccJerkMag_std)" 
 [67] "mean(fBodyBodyGyroMag_std)"     "mean(fBodyBodyGyroJerkMag_std)"
 
-##Variables of the TIDY DATASET:
+##Variables of the TIDY DATASET:  
 
-1. Subject ID
-Integer variable ranging from 1 to 30. Each number represents an individual partaking in the experiment. 
+1. Subject ID  
+Integer variable ranging from 1 to 30. Each number represents an individual partaking in the experiment.   
 
-2. Activity ID:
-A factor variable with 6 levels.
-LAYING-->1, SITTING --> 2, STANDING--> 3, WALKING--> 4, WALKING_DOWNSTAIRS--> 5, WALKING_UPSTAIRS -->6
+2. Activity ID:  
+A factor variable with 6 levels.  
+LAYING-->1, SITTING --> 2, STANDING--> 3, WALKING--> 4, WALKING_DOWNSTAIRS--> 5, WALKING_UPSTAIRS -->6  
 
-For all variables 3:68:
-mean("name")--> Reperesents average of the feature "name"
-All variables are numeric and normalized on as scale -1 to 1.
-The "names" represent features of wide variety that are calculated of either mean or standard deviation.
-_m --> Mean of the feature
-_std --> Standard Deviation of the feature
-_m without either X,Y or Z means it's a standalone measurement.
-_mX --> X-axis
-_mY --> Y-axis
-_mZ --> Z-axis
+For all variables 3:68:  
+mean("name")--> Reperesents average of the feature "name"  
+All variables are numeric and normalized on as scale -1 to 1.  
+The "names" represent features of wide variety that are calculated of either mean or standard deviation.  
+_m --> Mean of the feature  
+_std --> Standard Deviation of the feature  
+_m without either X,Y or Z means it's a standalone measurement.  
+_mX --> X-axis  
+_mY --> Y-axis  
+_mZ --> Z-axis  
 
-Feature names starting with "t" means they are measured in the time domain.
-Feature names starting with "f" means they are measured in the frequency domain.
+Feature names starting with "t" means they are measured in the time domain.  
+Feature names starting with "f" means they are measured in the frequency domain.  
 
-All above rules also apply to the "_std" similarly.
+All above rules also apply to the "_std" similarly.  
