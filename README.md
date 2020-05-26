@@ -1,10 +1,10 @@
 #Human-Activity-Recognition-Using-Smartphones
 This project is done as the course end mandatory assignment of Getting and Cleaning Data taught by on Coursera.
 *********************************************************************************************
-Solution By: Usman Khawar
-Work Email: ukhawar.bee17seecs@seecs.edu.pk
-Institution: National University of Sciences and Technology
-Knowledge Field: Data Science
+Solution By: Usman Khawar  
+Work Email: ukhawar.bee17seecs@seecs.edu.pk  
+Institution: National University of Sciences and Technology  
+Knowledge Field: Data Science  
 Files: README.md, CodeBook.md, run_analysis.R
 *********************************************************************************************
 Data Description:
