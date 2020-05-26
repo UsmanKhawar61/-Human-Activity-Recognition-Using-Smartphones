@@ -142,4 +142,5 @@ After renaming the data variables, we got the following:
 
 ##Step 4:
 Now we grouped the data by variables Activity ID and Subject ID, after that, summarise() function was used to determine average of each variable. The new tidy dataset had the following variables:
+wbi
 
